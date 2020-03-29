@@ -2,27 +2,27 @@
   "categories": [
     {
       "id": 1,
-      "title": "some category 1"
+      "title": "category 1"
     },
     {
       "id": 2,
-      "title": "some category 2"
+      "title": "category 2"
     }
   ],
   "posts": [
     {
-      "id": 1,
-      "title": "title 1",
+      "title": "title 1 edited",
       "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
-      "categoryId": 1,
-      "userId": 1
-    },
-    {
-      "id": 2,
-      "title": "title 2",
-      "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
+      "id": 1,
       "categoryId": 1,
       "userId": 2
+    },
+    {
+      "title": "title 2",
+      "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
+      "id": 2,
+      "categoryId": 1,
+      "userId": 3
     },
     {
       "title": "title 3",
@@ -37,13 +37,6 @@
       "id": 4,
       "categoryId": 2,
       "userId": 2
-    },
-    {
-      "title": "title new",
-      "body": "new post random",
-      "categoryId": 1,
-      "id": 5,
-      "userId": 1
     }
   ],
   "comments": [
@@ -121,6 +114,29 @@
         "name": "Deckow-Crist",
         "catchPhrase": "Proactive didactic contingency",
         "bs": "synergize scalable supply-chains"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Clementine Bauch",
+      "username": "Samantha",
+      "email": "Nathan@yesenia.net",
+      "address": {
+        "street": "Douglas Extension",
+        "suite": "Suite 847",
+        "city": "McKenziehaven",
+        "zipcode": "59590-4157",
+        "geo": {
+          "lat": "-68.6102",
+          "lng": "-47.0653"
+        }
+      },
+      "phone": "1-463-123-4447",
+      "website": "ramiro.info",
+      "company": {
+        "name": "Romaguera-Jacobson",
+        "catchPhrase": "Face to face bifurcated interface",
+        "bs": "e-enable strategic applications"
       }
     }
   ]
