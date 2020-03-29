@@ -13,7 +13,7 @@ const FilterBar = () => {
       </div>
       <Select
         className="uk-width-small uk-margin-auto-left"
-        value="asc"
+        defaultValue="asc"
         options={[
           { value: "asc", label: "ASC" },
           { value: "desc", label: "DESC" }
@@ -21,7 +21,7 @@ const FilterBar = () => {
       />
       <Select
         className="uk-width-small uk-margin-auto-left"
-        value={6}
+        defaultValue={6}
         options={[
           { value: 6, label: "6" },
           { value: 12, label: "12" },
