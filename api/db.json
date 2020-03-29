@@ -1,12 +1,12 @@
 {
   "categories": [
     {
-        "id": 1,
-        "title": "some category 1"
+      "id": 1,
+      "title": "some category 1"
     },
     {
-        "id": 2,
-        "title": "some category 2"
+      "id": 2,
+      "title": "some category 2"
     }
   ],
   "posts": [
@@ -33,6 +33,12 @@
       "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit",
       "id": 4,
       "categoryId": 2
+    },
+    {
+      "title": "title new",
+      "body": "new post random",
+      "categoryId": 1,
+      "id": 5
     }
   ],
   "comments": [
