@@ -74,6 +74,48 @@
       "body": "new",
       "postId": 1,
       "id": 5
+    },
+    {
+      "name": "Mikhail Kazakov",
+      "email": "kamiournew@gmail.com",
+      "body": "dsfsdfsdf",
+      "postId": 1,
+      "id": 7
+    },
+    {
+      "name": "New name",
+      "email": "kamiournew@gmail.com",
+      "body": "New new comment",
+      "postId": 1,
+      "id": 8
+    },
+    {
+      "name": "fsdgdfgdfh",
+      "email": "email@email.com",
+      "body": "dfgdfhdgdgdfg",
+      "postId": 1,
+      "id": 9
+    },
+    {
+      "name": "sdfsdf",
+      "email": "email@email.com",
+      "body": "sdfsdfsdfsdfsdgdfgdg",
+      "postId": 2,
+      "id": 10
+    },
+    {
+      "name": "dfgdsg",
+      "email": "newemail@email.com",
+      "body": "new comment",
+      "postId": 3,
+      "id": 11
+    },
+    {
+      "name": "name",
+      "email": "email@email.com",
+      "body": "comment",
+      "postId": 4,
+      "id": 12
     }
   ],
   "users": [

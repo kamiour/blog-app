@@ -1,5 +1,6 @@
 export const sortBy = "title";
 export const baseUrlPosts = "http://localhost:3000/posts";
+export const baseUrlComments = "http://localhost:3000/comments";
 export const maxNumberOfPages = 8;
 
 export const sortOptions = [
