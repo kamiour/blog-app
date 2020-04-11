@@ -1,11 +1,12 @@
-import React, { useContext } from "react";
-import { FavoritesContext } from "../../shared/context";
-
+import React from "react";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
-const PostSingleGrid = props => {
-  const { isActiveFavorite } = useContext(FavoritesContext);
-  const active = isActiveFavorite(props.post.id);
+const PostSingleGrid = (props) => {
+  const favorites = useSelector((state) => state.favorites);
+  const active = !!favorites.find(
+    (favoriteItem) => favoriteItem.id === props.post.id
+  );
 
   return (
     <div>
@@ -17,7 +18,7 @@ const PostSingleGrid = props => {
               href="/"
               className={active ? "uk-icon-link active" : "uk-icon-link"}
               uk-icon="heart"
-              onClick={e => {
+              onClick={(e) => {
                 props.handleHeartClick(e, props.post, active);
               }}
             >

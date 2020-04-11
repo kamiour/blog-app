@@ -1,4 +1,4 @@
-import React, { useState, useReducer, useContext } from "react";
+import React, { useState, useReducer } from "react";
 
 import { usePosts } from "../../hooks/usePosts";
 
@@ -8,14 +8,12 @@ import PostsList from "./PostsList";
 import PostsGrid from "./PostsGrid";
 import Pagination from "../pagination/Pagination";
 import MainLoader from "../MainLoader";
-import {
-  PostsContext,
-  GridContext,
-  FavoritesContext
-} from "../../shared/context";
+import { PostsContext, GridContext } from "../../shared/context";
 
 import { sortBy, baseUrlPosts } from "../../shared/app-constants";
 import { paramsReducer } from "../../shared/paramsReducer";
+import { addFavorite, removeFavorite } from "../../redux/actions/favorites";
+import { useDispatch } from "react-redux";
 
 const initialParams = {
   q: "",
@@ -24,7 +22,7 @@ const initialParams = {
   _page: 1,
   _order: "asc",
   _start: "",
-  _end: ""
+  _end: "",
 };
 
 const Posts = () => {
@@ -38,16 +36,16 @@ const Posts = () => {
 
   const [gridMode, setGridMode] = useState(true);
 
-  const { dispatchFavorites } = useContext(FavoritesContext);
+  const dispatch = useDispatch();
 
   const handleHeartClick = (e, post, active) => {
     e.preventDefault();
     if (active) {
-      dispatchFavorites({ type: "removeFavorite", value: post.id });
+      dispatch(removeFavorite(post.id));
       return;
     }
 
-    dispatchFavorites({ type: "addFavorite", value: post });
+    dispatch(addFavorite(post.id, post.title));
   };
 
   return (
@@ -59,7 +57,7 @@ const Posts = () => {
         numberOfPosts,
         loading,
         gridMode,
-        setGridMode
+        setGridMode,
       }}
     >
       <main className="uk-main">

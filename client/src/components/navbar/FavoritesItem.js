@@ -1,8 +1,9 @@
-import React, { useContext } from "react";
-import { FavoritesContext } from "../../shared/context";
+import React from "react";
+import { removeFavorite } from "../../redux/actions/favorites";
+import { useStore } from "react-redux";
 
-const FavoritesItem = props => {
-  const { dispatchFavorites } = useContext(FavoritesContext);
+const FavoritesItem = (props) => {
+  const { dispatch, state } = useStore();
 
   return (
     <tr>
@@ -12,9 +13,9 @@ const FavoritesItem = props => {
           className="uk-button"
           type="button"
           uk-icon="icon: close;"
-          onClick={event => {
+          onClick={(event) => {
             event.preventDefault();
-            dispatchFavorites({ type: "removeFavorite", value: props.id });
+            dispatch(removeFavorite(props.id));
           }}
         />
       </td>

@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
+import React from "react";
 import FavoritesList from "./FavoritesList";
-import { FavoritesContext } from "../../shared/context";
+import { useSelector } from "react-redux";
 
 const Favorites = () => {
-  const { favorites } = useContext(FavoritesContext);
+  const favorites = useSelector((state) => state.favorites);
 
   return (
     <div className="uk-navbar-item">
