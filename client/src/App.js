@@ -12,11 +12,9 @@ import Albums from "./components/Albums";
 import Navbar from "./components/navbar/Navbar";
 import PostPage from "./components/postPage/PostPage";
 
-/* Redux-related */
 import { createStore } from "redux";
 import { Provider } from "react-redux";
-import rootReducer from "./redux/reducers/favorites";
-/**/
+import rootReducer from "./redux/reducers";
 
 const store = createStore(rootReducer);
 

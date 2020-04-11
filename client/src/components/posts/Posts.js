@@ -12,8 +12,9 @@ import { PostsContext, GridContext } from "../../shared/context";
 
 import { sortBy, baseUrlPosts } from "../../shared/app-constants";
 import { paramsReducer } from "../../shared/paramsReducer";
-import { addFavorite, removeFavorite } from "../../redux/actions/favorites";
+
 import { useDispatch } from "react-redux";
+import { favorites } from "../../redux/reducers";
 
 const initialParams = {
   q: "",
@@ -41,11 +42,11 @@ const Posts = () => {
   const handleHeartClick = (e, post, active) => {
     e.preventDefault();
     if (active) {
-      dispatch(removeFavorite(post.id));
+      dispatch(favorites.actions.removeFavorite({ id: post.id }));
       return;
     }
 
-    dispatch(addFavorite(post.id, post.title));
+    dispatch(favorites.actions.addFavorite({ id: post.id, title: post.title }));
   };
 
   return (

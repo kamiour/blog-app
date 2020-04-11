@@ -1,9 +1,9 @@
 import React from "react";
-import { removeFavorite } from "../../redux/actions/favorites";
-import { useStore } from "react-redux";
+import { useDispatch } from "react-redux";
+import { favorites } from "../../redux/reducers";
 
 const FavoritesItem = (props) => {
-  const { dispatch, state } = useStore();
+  const dispatch = useDispatch();
 
   return (
     <tr>
@@ -15,7 +15,7 @@ const FavoritesItem = (props) => {
           uk-icon="icon: close;"
           onClick={(event) => {
             event.preventDefault();
-            dispatch(removeFavorite(props.id));
+            dispatch(favorites.actions.removeFavorite({ id: props.id }));
           }}
         />
       </td>
