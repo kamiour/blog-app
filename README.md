@@ -1,10 +1,12 @@
-To run locally:
+## To run in local development mode:
 
-1) local server:
-cd api --> json-server --watch db.json
+``` bash
+# 1) local API server:
+cd api; json-server --watch db.json
 
-2) admin:
-cd admin --> npm run start
+# 2) admin:
+cd admin; npm install; npm run start
 
-3) client:
-cd client --> npm run start
+# 3) client:
+cd client; npm install; npm run start
+```
