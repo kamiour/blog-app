@@ -1,10 +1,18 @@
-To run locally:
+Admin:
+> https://react-blog-app-admin.web.app
 
-1) local server:
-cd api --> json-server --watch db.json
+json-server backend API:
+> https://arctic-eds-46327.herokuapp.com
 
-2) admin:
-cd admin --> npm run start
+## To run in local development mode:
 
-3) client:
-cd client --> npm run start
+``` bash
+# 1) local API server:
+cd api; json-server --watch db.json
+
+# 2) admin:
+cd admin; npm install; npm run start
+
+# 3) client:
+cd client; npm install; npm run start
+```
