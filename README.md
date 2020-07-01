@@ -1,4 +1,5 @@
-# Admin: https://react-blog-app-admin.web.app
+## Admin: https://react-blog-app-admin.web.app
+## json-server backend API: https://arctic-eds-46327.herokuapp.com
 
 ## To run in local development mode:
 
